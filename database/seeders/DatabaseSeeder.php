@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call([
+            PeriodosSeeder::class,
             CursoSeeder::class,
             DocenteSeeder::class,
             AsignaturaSeeder::class,
@@ -28,7 +29,6 @@ class DatabaseSeeder extends Seeder
             MatriculaSeeder::class,
             CalificacionSeeder::class,
             AsistenciaSeeder::class,
-            PeriodosSeeder::class,
         ]);
     }
 }

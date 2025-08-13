@@ -10,6 +10,7 @@ return new class extends Migration {
             $table->id();
             $table->foreignId('estudiante_id')->constrained('estudiantes')->onDelete('cascade');
             $table->foreignId('curso_id')->constrained('cursos')->onDelete('cascade');
+            $table->foreignId('periodo_id')->constrained()->onDelete('cascade');
             $table->year('anio_lectivo');
             $table->timestamps();
         });
